@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_restaurant_developers",
+  "info": {
+    "displayName": "developer"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}

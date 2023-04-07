@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "restaurants",
+  "info": {
+    "singularName": "restaurant",
+    "pluralName": "restaurants",
+    "displayName": "Restaurant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 5,
+      "maxLength": 200
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "cuisines": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cuisine.cuisine"
+    }
+  }
+}
